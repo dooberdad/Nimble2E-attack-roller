@@ -21,8 +21,8 @@
   "styles": [],
   "packs": [],
   "languages": [],
-  "url": "https://github.com/dooberdad/Nimble2E-attack-roller/tree/v1",
-  "manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/refs/tags/v1/mighty-dice-roller/module.json",
+  "url": "https://github.com/dooberdad/Nimble2E-attack-roller",
+  "manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/main/module.json",
   "download": "https://github.com/dooberdad/Nimble2E-attack-roller/releases/download/v1/nimble2e-attack-roller-v1.0.0.zip",
   "license": "LICENSE",
   "readme": ""
