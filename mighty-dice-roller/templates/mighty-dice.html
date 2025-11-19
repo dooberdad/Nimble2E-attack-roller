@@ -1,0 +1,85 @@
+<form class="mighty-dice-form">
+  <div class="form-group">
+    <label>Dice Count:</label>
+    <input type="range" name="count" min="1" max="12" value="3"
+           oninput="this.nextElementSibling.value=this.value">
+    <output>3</output>
+  </div>
+
+  <div class="form-group">
+    <label>Die Type:</label>
+    <select name="die">
+      <option value="d4">d4</option>
+      <option value="d6" selected>d6</option>
+      <option value="d8">d8</option>
+      <option value="d10">d10</option>
+      <option value="d12">d12</option>
+      <option value="d20">d20</option>
+    </select>
+  </div>
+
+  <hr/>
+
+  <div class="form-group">
+<label><input type="checkbox" name="advantage" /> Advantage</label><br>
+
+<label>Disadvantage:</label>
+<select name="disadvantageLevel">
+      <option value="0" selected>Off</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <hr/>
+
+  <div class="form-group">
+    <label><input type="checkbox" name="vicious" /> Vicious (extra base die on crit)</label>
+  </div>
+
+  <div class="form-group">
+    <label>Aim for the Head:</label>
+    <select name="headLevel">
+      <option value="0" selected>Off</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label><input type="checkbox" name="opportunist" /> Vicious Opportunist (always crit)</label>
+  </div>
+
+  <div class="form-group">
+    <label>Center Mass:</label>
+    <select name="centerMassLevel">
+      <option value="0" selected>Off</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <hr/>
+
+  <div class="form-group">
+    <label>Label (optional):</label>
+    <input type="text" name="label" placeholder="Nimble Roll">
+  </div>
+
+  <hr/>
+
+  <div class="form-group">
+    <button type="button" data-action="roll">Roll Dice</button>
+    <button type="button" data-action="repeat">Repeat Last</button>
+    <button type="button" data-action="reset">Reset</button>
+  </div>
+</form>
