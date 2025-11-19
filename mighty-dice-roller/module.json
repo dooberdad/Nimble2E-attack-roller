@@ -14,7 +14,7 @@
   ],
 
   "url": "https://github.com/dooberdad/Nimble2E-attack-roller",
-  "manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/main/mighty-dice-roller/module.json",
   "download": "https://github.com/dooberdad/Nimble2E-attack-roller/releases/download/v1/nimble2e-attack-roller-v1.0.0.zip",
 
   "compatibility": {
