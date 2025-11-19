@@ -1,85 +1,139 @@
 <form class="mighty-dice-form">
-  <div class="form-group">
-    <label>Dice Count:</label>
-    <input type="range" name="count" min="1" max="12" value="3"
-           oninput="this.nextElementSibling.value=this.value">
-    <output>3</output>
-  </div>
+  <header class="mighty-dice-header">
+    <h2>Mighty Dice Roller</h2>
+  </header>
 
-  <div class="form-group">
-    <label>Die Type:</label>
-    <select name="die">
-      <option value="d4">d4</option>
-      <option value="d6" selected>d6</option>
-      <option value="d8">d8</option>
-      <option value="d10">d10</option>
-      <option value="d12">d12</option>
-      <option value="d20">d20</option>
-    </select>
-  </div>
+  <!-- Dice count / slider -->
+  <section class="mighty-dice-section">
+    <div class="field-row">
+      <label>
+        Number of Dice:
+        <input
+          type="range"
+          name="count"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+          oninput="this.closest('form').querySelector('output[name=die-count]').value = this.value"
+        />
+      </label>
 
-  <hr/>
+      <label>
+        Dice Count:
+        <output name="die-count">1</output>
+      </label>
+    </div>
 
-  <div class="form-group">
-<label><input type="checkbox" name="advantage" /> Advantage</label><br>
+    <div class="field-row">
+      <label>
+        Damage Die:
+        <select name="die">
+          <option value="d4">d4</option>
+          <option value="d6" selected>d6</option>
+          <option value="d8">d8</option>
+          <option value="d10">d10</option>
+          <option value="d12">d12</option>
+          <option value="d20">d20</option>
+          <option value="d44">d44</option>
+          <option value="d66">d66</option>
+          <option value="d88">d88</option>
+        </select>
+      </label>
 
-<label>Disadvantage:</label>
-<select name="disadvantageLevel">
-      <option value="0" selected>Off</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-  </div>
+      <label>
+        Special Die:
+        <select name="specialDie">
+          <option value="d4">d4</option>
+          <option value="d6" selected>d6</option>
+          <option value="d8">d8</option>
+          <option value="d10">d10</option>
+          <option value="d12">d12</option>
+          <option value="d20">d20</option>
+        </select>
+      </label>
+    </div>
+  </section>
 
-  <hr/>
+  <!-- Crit options / traits -->
+  <section class="mighty-dice-section">
+    <div class="field-row">
+      <label>
+        <input type="checkbox" name="vicious" />
+        Vicious (extra die on crit)
+      </label>
+    </div>
 
-  <div class="form-group">
-    <label><input type="checkbox" name="vicious" /> Vicious (extra base die on crit)</label>
-  </div>
+    <div class="field-row">
+      <label>
+        Aim for the Head (levels):
+        <select name="headLevel">
+          <option value="0" selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+    </div>
 
-  <div class="form-group">
-    <label>Aim for the Head:</label>
-    <select name="headLevel">
-      <option value="0" selected>Off</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-  </div>
+    <div class="field-row">
+      <label>
+        <input type="checkbox" name="opportunist" />
+        Opportunist (treat special as max on crit)
+      </label>
+    </div>
 
-  <div class="form-group">
-    <label><input type="checkbox" name="opportunist" /> Vicious Opportunist (always crit)</label>
-  </div>
+    <div class="field-row">
+      <label>
+        Center Mass (levels):
+        <select name="centerMassLevel">
+          <option value="0" selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+  </section>
 
-  <div class="form-group">
-    <label>Center Mass:</label>
-    <select name="centerMassLevel">
-      <option value="0" selected>Off</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-  </div>
+  <!-- Advantage / Disadvantage -->
+  <section class="mighty-dice-section">
+    <div class="field-row">
+      <label>
+        <input type="checkbox" name="advantage" />
+        Advantage
+      </label>
+    </div>
 
-  <hr/>
+    <div class="field-row">
+      <label>
+        Disadvantage Level:
+        <select name="disadvantageLevel">
+          <option value="0" selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+  </section>
 
-  <div class="form-group">
-    <label>Label (optional):</label>
-    <input type="text" name="label" placeholder="Nimble Roll">
-  </div>
+  <!-- Label / flavor -->
+  <section class="mighty-dice-section">
+    <div class="field-row">
+      <label>
+        Label / Flavor Text:
+        <input type="text" name="label" placeholder="Nimble Roll" />
+      </label>
+    </div>
+  </section>
 
-  <hr/>
-
-  <div class="form-group">
-    <button type="button" data-action="roll">Roll Dice</button>
+  <!-- Buttons -->
+  <footer class="mighty-dice-footer">
+    <button type="button" data-action="roll">Roll</button>
     <button type="button" data-action="repeat">Repeat Last</button>
     <button type="button" data-action="reset">Reset</button>
-  </div>
+  </footer>
 </form>

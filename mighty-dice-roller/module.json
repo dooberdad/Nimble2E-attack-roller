@@ -1,34 +1,22 @@
 {
   "id": "mighty-dice-roller",
-  "title": "Nimble Attack Roller",
-  "description": "Attack, crit, and damage roller for the Nimble 2E TTRPG system. Includes special die logic, advantage/disadvantage, Vicious, Aim for the Head, and Center Mass.",
+  "title": "Nimble2E System Attack Roller",
+  "description": "Nimble 2E has its own unique form of rolling for attacks and damage. This module has multiple basic options, plus some hombrewed options for classes I am designing. I will continue to add to it to account for other nimble features, like D66 D88 etc.",
   "version": "1.0.0",
-  "type": "module",
-
-  "authors": [
-    {
-      "name": "Michael Brown",
-      "url": "",
-      "email": ""
-    }
-  ],
-
-  "url": "https://github.com/dooberdad/Nimble2E-attack-roller",
-  "manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/main/mighty-dice-roller/module.json",
-  "download": "https://github.com/dooberdad/Nimble2E-attack-roller/releases/download/v1/nimble2e-attack-roller-v1.0.0.zip",
-
   "compatibility": {
     "minimum": "11",
     "verified": "12"
   },
-
+  "authors": [
+    {
+      "name": "You + ChatGPT",
+      "flags": {}
+    }
+  ],
   "esmodules": [
     "scripts/mighty-dice.js"
   ],
-  "scripts": [],
-  "styles": [],
-  "packs": [],
-  "languages": [],
-
-  "license": "MIT"
+  "manifest": "",
+  "license": "LICENSE",
+  "flags": {}
 }
