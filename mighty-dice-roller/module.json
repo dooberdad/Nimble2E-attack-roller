@@ -2,7 +2,7 @@
   "id": "mighty-dice-roller",
   "title": "Nimble2E System Attack Roller",
   "description": "Nimble 2E has its own unique form of rolling for attacks and damage. This module has multiple basic options, plus some hombrewed options for classes I am designing. I will continue to add to it to account for other nimble features, like D66 D88 etc.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
