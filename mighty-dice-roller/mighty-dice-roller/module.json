@@ -1,0 +1,29 @@
+{
+  "id": "mighty-dice-roller",
+  "title": "Mighty Dice Roller",
+  "description": "Custom Nimble 2e-style attack roller with special die, sneak attack, and weapon modifiers.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "You + ChatGPT",
+      "url": ""
+    }
+  ],
+  "url": "",
+  "license": "LICENSE",
+  "readme": "",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/mighty-dice.js"
+  ],
+  "scripts": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "system": [],
+  "relationships": {},
+  "flags": {}
+}
