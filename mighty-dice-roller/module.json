@@ -16,8 +16,8 @@
   "esmodules": [
     "scripts/mighty-dice.js"
   ],
-  "manifest": "https://raw.githubusercontent.com/dooberdad/mighty-dice-roller/main/module.json",
-  "download": "https://github.com/dooberdad/mighty-dice-roller/releases/download/1.2/Nimble.2E.Dice.Roller.zip",
+"manifest": "https://raw.githubusercontent.com/dooberdad/Nimble2E-attack-roller/main/module.json",
+"download": "https://github.com/dooberdad/Nimble2E-attack-roller/releases/download/V1.2/Nimble.2E.Dice.Roller.zip"
   "license": "LICENSE",
   "flags": {}
 }
